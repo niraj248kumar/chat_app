@@ -44,6 +44,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
 //Method to pick an image from the gallery
   Future<void> _pickImage() async {
+
     final picker = ImagePicker();
     final XFile? pickedImage =
         await picker.pickImage(source: ImageSource.gallery);

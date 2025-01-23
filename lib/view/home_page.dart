@@ -185,9 +185,9 @@ class _ChatHomePageState extends State<HomePage> {
           } else {
 
             return ListView.builder(
-              itemCount:itemCount,
+              itemCount:userProvider.userData.length,
               itemBuilder: (context, index) {
-                var user = userProvider.userData[index+1];
+                var user = userProvider.userData[index];
                 return InkWell(
                   onTap: () {
                     Navigator.pushAndRemoveUntil(
